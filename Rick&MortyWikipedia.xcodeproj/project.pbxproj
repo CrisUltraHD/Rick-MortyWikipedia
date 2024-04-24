@@ -14,6 +14,7 @@
 		FE66FF4F2BD97A0700D7D1E9 /* Rick_MortyWikipediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE66FF4E2BD97A0700D7D1E9 /* Rick_MortyWikipediaTests.swift */; };
 		FE66FF592BD97A0700D7D1E9 /* Rick_MortyWikipediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE66FF582BD97A0700D7D1E9 /* Rick_MortyWikipediaUITests.swift */; };
 		FE66FF5B2BD97A0700D7D1E9 /* Rick_MortyWikipediaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE66FF5A2BD97A0700D7D1E9 /* Rick_MortyWikipediaUITestsLaunchTests.swift */; };
+		FE66FF6B2BD97B8D00D7D1E9 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE66FF6A2BD97B8D00D7D1E9 /* WelcomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		FE66FF542BD97A0700D7D1E9 /* Rick&MortyWikipediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rick&MortyWikipediaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE66FF582BD97A0700D7D1E9 /* Rick_MortyWikipediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_MortyWikipediaUITests.swift; sourceTree = "<group>"; };
 		FE66FF5A2BD97A0700D7D1E9 /* Rick_MortyWikipediaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_MortyWikipediaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FE66FF6A2BD97B8D00D7D1E9 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				FE66FF3F2BD97A0600D7D1E9 /* ContentView.swift */,
+				FE66FF6A2BD97B8D00D7D1E9 /* WelcomeScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE66FF6B2BD97B8D00D7D1E9 /* WelcomeScreen.swift in Sources */,
 				FE66FF402BD97A0600D7D1E9 /* ContentView.swift in Sources */,
 				FE66FF3E2BD97A0600D7D1E9 /* Rick_MortyWikipediaApp.swift in Sources */,
 			);
@@ -449,11 +453,11 @@
 				DEVELOPMENT_TEAM = 9Y37S332F7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rick & Morty Wiki App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,6 +465,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Lontyle-Games.Rick-MortyWikipedia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -478,11 +485,11 @@
 				DEVELOPMENT_TEAM = 9Y37S332F7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rick & Morty Wiki App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,6 +497,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Lontyle-Games.Rick-MortyWikipedia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
