@@ -94,8 +94,10 @@
 		FE66FF3C2BD97A0600D7D1E9 /* Rick&MortyWikipedia */ = {
 			isa = PBXGroup;
 			children = (
+				FE66FF692BD97A9F00D7D1E9 /* Controller */,
+				FE66FF682BD97A9B00D7D1E9 /* View */,
+				FE66FF672BD97A9400D7D1E9 /* Model */,
 				FE66FF3D2BD97A0600D7D1E9 /* Rick_MortyWikipediaApp.swift */,
-				FE66FF3F2BD97A0600D7D1E9 /* ContentView.swift */,
 				FE66FF412BD97A0700D7D1E9 /* Assets.xcassets */,
 				FE66FF432BD97A0700D7D1E9 /* Preview Content */,
 			);
@@ -125,6 +127,28 @@
 				FE66FF5A2BD97A0700D7D1E9 /* Rick_MortyWikipediaUITestsLaunchTests.swift */,
 			);
 			path = "Rick&MortyWikipediaUITests";
+			sourceTree = "<group>";
+		};
+		FE66FF672BD97A9400D7D1E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE66FF682BD97A9B00D7D1E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE66FF3F2BD97A0600D7D1E9 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE66FF692BD97A9F00D7D1E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
