@@ -9,34 +9,40 @@ import SwiftUI
 
 struct WelcomeScreen: View {
     var body: some View {
-        VStack {
-            Text("Welcome To Rick & Morty Characters Wikipedia!")
-                .multilineTextAlignment(.leading)
-                .bold()
-                .padding()
-                .frame(maxWidth: .infinity)
+        NavigationView{
+            VStack {
+                // Welcome message
+                Text("Welcome To Rick & Morty Characters Wikipedia!")
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.leading)
+                    .padding()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading) // Align text to the top left
                 
-
-                    
-            Button(action: {}){
-                Image(systemName: "arrow.right.circle")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 30, height: 30) // Adjust size as needed
-
+                // Navigation link to MainScreen
+                NavigationLink(destination: MainScreen()) {
+                    Image(systemName: "arrow.right.circle")
+                        .resizable()
+                        .foregroundColor(.white)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 50, height: 50)
+                }
+                .padding(5)
+                .offset(y: -50) // Move the button up
+                
             }
-            .padding(5)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(
+                // Background image
+                Image("Background")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .edgesIgnoringSafeArea(.all) // Fill the entire screen ignoring the safe area
+            )
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(
-            Image("Background")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .edgesIgnoringSafeArea(.all) // Fill the entire screen
-
-        )
+        .navigationBarHidden(true) // Hide the navigation bar
     }
-        
 }
 
 #Preview {

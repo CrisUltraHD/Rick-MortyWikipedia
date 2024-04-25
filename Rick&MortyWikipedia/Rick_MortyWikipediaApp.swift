@@ -11,7 +11,8 @@ import SwiftUI
 struct Rick_MortyWikipediaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // First screen to appear
+            WelcomeScreen()
         }
     }
 }
