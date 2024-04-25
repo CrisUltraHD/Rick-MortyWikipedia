@@ -33,8 +33,8 @@ struct MainScreen: View {
     // MARK: - Body
     
     var body: some View {
-        VStack(){
-            ZStack{
+        VStack {
+            ZStack {
                 // Iteration over the list of characters to display their images
                 ForEach(characterController.characters.indices, id: \.self) { index in
                     let character = characterController.characters[index]
@@ -122,7 +122,7 @@ struct MainScreen: View {
             .navigationTitle("Explore All Characters")
             .navigationBarTitleDisplayMode(.large)
             .navigationBarBackButtonHidden(true)
-        // Load character data when first appearing screen
+        // Load character data when first appearing
             .onAppear {
                 characterController.fetchCharacterData()
             }

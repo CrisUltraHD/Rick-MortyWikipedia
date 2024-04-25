@@ -15,7 +15,7 @@ struct KeyboardAwareModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             // Add padding to the bottom of the view equal to the keyboard height
-            .padding(.bottom, keyboardHeight)
+            .padding(.bottom, keyboardHeight * 0.5)
             .onAppear {
                 // Observe keyboard show notification
                 NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: .main) { notification in
