@@ -10,8 +10,9 @@ import Foundation
 class CharacterController: ObservableObject {
     // Array of the characters
     @Published var characters: [Character] = []
+
     // URL of the next page of characters
-    var nextPageURL: URL?
+    var nextPageURL: URL? = URL(string: "https://rickandmortyapi.com/api/character?page=1")
 
     // Function to fetch character data
     func fetchCharacterData() {
@@ -30,7 +31,7 @@ class CharacterController: ObservableObject {
         // Check if there is a URL for the next page
         guard let nextPageURL = nextPageURL else {
             print("No URL for the next page available")
-            return
+            return 
         }
 
         // Call function to fetch characters from the next page

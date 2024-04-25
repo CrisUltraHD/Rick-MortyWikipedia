@@ -26,6 +26,10 @@ struct MainScreen: View {
     // State to control whether a detail view is presented
     @State private var isPresented = false
     
+    // State to store the text entered in the search field
+    @State private var searchText = ""
+    
+    
     // MARK: - Body
     
     var body: some View {
@@ -38,10 +42,11 @@ struct MainScreen: View {
                     
                     // Display image if it's available in the image loader
                     if let image = imageLoader.images[imageUrl] {
+                        
                         Image(uiImage: image)
                             .resizable()
                             .scaledToFill()
-                            .frame(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.height * 0.6)
+                            .frame(width: UIScreen.main.bounds.width * 0.6, height: UIScreen.main.bounds.height * 0.5)
                             .onTapGesture {
                                 // Update the current index when tapping on the image
                                 self.currentIndex = index
@@ -58,7 +63,8 @@ struct MainScreen: View {
                             .cornerRadius(25)
                             .opacity(currentIndex == index ? 1.0 : 0.5)
                             .scaleEffect(currentIndex == index ? 1.2 : 0.8)
-                            .offset(x: CGFloat(index - currentIndex) * UIScreen.main.bounds.width * 0.75 + dragOffset, y: 0)
+                            .offset(x: CGFloat(index - currentIndex) * UIScreen.main.bounds.width * 0.70 + dragOffset, y: 0)
+                        
                     } else {
                         // Puts a loading text while the image is loading in case image is nil
                         Text("Loading image...")
@@ -95,14 +101,45 @@ struct MainScreen: View {
             .sheet(isPresented: $isPresented) {
                 CharacterDetailViewScreen(character: characterController.characters[currentIndex])
             }
+            
         }
+        .frame(maxWidth: .infinity * 0.5, maxHeight: .infinity * 0.5)
+
+        // TextField for name search
+        TextField("\(Image(systemName: "magnifyingglass"))  Search by name", text: $searchText)
+            .padding()
+            .background(Color(.systemGray6))
+            .cornerRadius(10)
+            .padding(.horizontal, 20)
+            .edgesIgnoringSafeArea(.bottom) // Ignorar el borde inferior seguro para que el TextField se extienda hasta abajo
+            .onChange(of: searchText) { oldValue, newValue in
+                // Update character array every time the search text changes
+                updateFilteredCharacters()
+            }
+            .modifier(KeyboardAwareModifier())
+
         // Navigation bar configuration
-        .navigationTitle("Explore All Characters")
-        .navigationBarTitleDisplayMode(.large)
-        .navigationBarBackButtonHidden(true)
+            .navigationTitle("Explore All Characters")
+            .navigationBarTitleDisplayMode(.large)
+            .navigationBarBackButtonHidden(true)
         // Load character data when first appearing screen
-        .onAppear {
+            .onAppear {
+                characterController.fetchCharacterData()
+            }
+
+    }
+    func updateFilteredCharacters() {
+        if searchText.isEmpty {
+            // If search text is empty clean the previous character array and fech all characters
+            characterController.characters.removeAll()
+            currentIndex = 0
             characterController.fetchCharacterData()
+            
+        } else {
+            // Re load all characters that when filtered got lost
+            characterController.fetchCharacterData()
+            // Filer characters by search text
+            characterController.characters = characterController.characters.filter { $0.name.localizedCaseInsensitiveContains(searchText) }
         }
     }
 }

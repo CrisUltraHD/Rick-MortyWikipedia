@@ -11,12 +11,13 @@
 		FE66FF422BD97A0700D7D1E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE66FF412BD97A0700D7D1E9 /* Assets.xcassets */; };
 		FE66FF452BD97A0700D7D1E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE66FF442BD97A0700D7D1E9 /* Preview Assets.xcassets */; };
 		FE66FF4F2BD97A0700D7D1E9 /* Rick_MortyWikipediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE66FF4E2BD97A0700D7D1E9 /* Rick_MortyWikipediaTests.swift */; };
-		FE66FF592BD97A0700D7D1E9 /* Rick_MortyWikipediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE66FF582BD97A0700D7D1E9 /* Rick_MortyWikipediaUITests.swift */; };
-		FE66FF5B2BD97A0700D7D1E9 /* Rick_MortyWikipediaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE66FF5A2BD97A0700D7D1E9 /* Rick_MortyWikipediaUITestsLaunchTests.swift */; };
 		FE66FF6B2BD97B8D00D7D1E9 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE66FF6A2BD97B8D00D7D1E9 /* WelcomeScreen.swift */; };
 		FE66FF6D2BD9836700D7D1E9 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE66FF6C2BD9836700D7D1E9 /* MainScreen.swift */; };
 		FE66FF6F2BD988E300D7D1E9 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE66FF6E2BD988E300D7D1E9 /* Character.swift */; };
 		FE66FF712BD989A700D7D1E9 /* CharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE66FF702BD989A700D7D1E9 /* CharacterController.swift */; };
+		FED24F562BDA8E5800CBEFAC /* CharacterControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED24F552BDA8E5800CBEFAC /* CharacterControllerTests.swift */; };
+		FED24F582BDA925000CBEFAC /* ImageLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED24F572BDA925000CBEFAC /* ImageLoaderTests.swift */; };
+		FED24F5C2BDAAC8800CBEFAC /* KeyboardAwareModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED24F5B2BDAAC8800CBEFAC /* KeyboardAwareModifier.swift */; };
 		FEF04B2D2BDA4427001B5747 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF04B2C2BDA4427001B5747 /* ImageLoader.swift */; };
 		FEF04B312BDA544D001B5747 /* CharacterDetailViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF04B302BDA544D001B5747 /* CharacterDetailViewScreen.swift */; };
 		FEF04B332BDA5DC4001B5747 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF04B322BDA5DC4001B5747 /* DateUtils.swift */; };
@@ -47,12 +48,13 @@
 		FE66FF4A2BD97A0700D7D1E9 /* Rick&MortyWikipediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rick&MortyWikipediaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE66FF4E2BD97A0700D7D1E9 /* Rick_MortyWikipediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_MortyWikipediaTests.swift; sourceTree = "<group>"; };
 		FE66FF542BD97A0700D7D1E9 /* Rick&MortyWikipediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rick&MortyWikipediaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE66FF582BD97A0700D7D1E9 /* Rick_MortyWikipediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_MortyWikipediaUITests.swift; sourceTree = "<group>"; };
-		FE66FF5A2BD97A0700D7D1E9 /* Rick_MortyWikipediaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_MortyWikipediaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FE66FF6A2BD97B8D00D7D1E9 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		FE66FF6C2BD9836700D7D1E9 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		FE66FF6E2BD988E300D7D1E9 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		FE66FF702BD989A700D7D1E9 /* CharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterController.swift; sourceTree = "<group>"; };
+		FED24F552BDA8E5800CBEFAC /* CharacterControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterControllerTests.swift; sourceTree = "<group>"; };
+		FED24F572BDA925000CBEFAC /* ImageLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderTests.swift; sourceTree = "<group>"; };
+		FED24F5B2BDAAC8800CBEFAC /* KeyboardAwareModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAwareModifier.swift; sourceTree = "<group>"; };
 		FEF04B2C2BDA4427001B5747 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		FEF04B302BDA544D001B5747 /* CharacterDetailViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewScreen.swift; sourceTree = "<group>"; };
 		FEF04B322BDA5DC4001B5747 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
@@ -88,7 +90,6 @@
 			children = (
 				FE66FF3C2BD97A0600D7D1E9 /* Rick&MortyWikipedia */,
 				FE66FF4D2BD97A0700D7D1E9 /* Rick&MortyWikipediaTests */,
-				FE66FF572BD97A0700D7D1E9 /* Rick&MortyWikipediaUITests */,
 				FE66FF3B2BD97A0600D7D1E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,17 +129,10 @@
 			isa = PBXGroup;
 			children = (
 				FE66FF4E2BD97A0700D7D1E9 /* Rick_MortyWikipediaTests.swift */,
+				FED24F552BDA8E5800CBEFAC /* CharacterControllerTests.swift */,
+				FED24F572BDA925000CBEFAC /* ImageLoaderTests.swift */,
 			);
 			path = "Rick&MortyWikipediaTests";
-			sourceTree = "<group>";
-		};
-		FE66FF572BD97A0700D7D1E9 /* Rick&MortyWikipediaUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FE66FF582BD97A0700D7D1E9 /* Rick_MortyWikipediaUITests.swift */,
-				FE66FF5A2BD97A0700D7D1E9 /* Rick_MortyWikipediaUITestsLaunchTests.swift */,
-			);
-			path = "Rick&MortyWikipediaUITests";
 			sourceTree = "<group>";
 		};
 		FE66FF672BD97A9400D7D1E9 /* Model */ = {
@@ -152,6 +146,7 @@
 		FE66FF682BD97A9B00D7D1E9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FED24F5B2BDAAC8800CBEFAC /* KeyboardAwareModifier.swift */,
 				FE66FF6A2BD97B8D00D7D1E9 /* WelcomeScreen.swift */,
 				FE66FF6C2BD9836700D7D1E9 /* MainScreen.swift */,
 				FEF04B302BDA544D001B5747 /* CharacterDetailViewScreen.swift */,
@@ -300,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEF04B332BDA5DC4001B5747 /* DateUtils.swift in Sources */,
+				FED24F5C2BDAAC8800CBEFAC /* KeyboardAwareModifier.swift in Sources */,
 				FE66FF6D2BD9836700D7D1E9 /* MainScreen.swift in Sources */,
 				FE66FF6B2BD97B8D00D7D1E9 /* WelcomeScreen.swift in Sources */,
 				FE66FF712BD989A700D7D1E9 /* CharacterController.swift in Sources */,
@@ -315,6 +311,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE66FF4F2BD97A0700D7D1E9 /* Rick_MortyWikipediaTests.swift in Sources */,
+				FED24F562BDA8E5800CBEFAC /* CharacterControllerTests.swift in Sources */,
+				FED24F582BDA925000CBEFAC /* ImageLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,8 +320,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE66FF592BD97A0700D7D1E9 /* Rick_MortyWikipediaUITests.swift in Sources */,
-				FE66FF5B2BD97A0700D7D1E9 /* Rick_MortyWikipediaUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,7 +469,7 @@
 				DEVELOPMENT_TEAM = 9Y37S332F7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Rick & Morty Wiki App";
+				INFOPLIST_KEY_CFBundleDisplayName = "Rick & Morty Wiki";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -505,7 +501,7 @@
 				DEVELOPMENT_TEAM = 9Y37S332F7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Rick & Morty Wiki App";
+				INFOPLIST_KEY_CFBundleDisplayName = "Rick & Morty Wiki";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

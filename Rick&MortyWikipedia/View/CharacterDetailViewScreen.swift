@@ -40,7 +40,7 @@ struct CharacterDetailViewScreen: View {
                     Text(" Species: \(character.species) ")
                     Text(" Gender: \(character.gender) ")
                     Text(" Location: \(character.location.name) ")
-                    Text(" Birth Date: \(DateUtils.formatDateString(character.created) ?? "Unknown") ")
+                    Text(" Created: \(DateUtils.formatDateString(character.created) ?? "Unknown") ")
                 }
                 .background(.black)
                 .foregroundColor(.white)
