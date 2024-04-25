@@ -18,7 +18,7 @@ struct CharacterDetailViewScreen: View {
     @StateObject var imageLoader = ImageLoader()
     
     // MARK: - Body
-
+    
     var body: some View {
         VStack(alignment: .leading) {
             // Check if image is loaded, otherwise display loading text
@@ -27,13 +27,13 @@ struct CharacterDetailViewScreen: View {
                 Text(character.name)
                     .font(.title)
                     .fontWeight(.semibold)
-
+                
                 // Character image
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFill()
                     .frame(width: 300, height: 300, alignment: .top)
-
+                
                 // Character details
                 Section{
                     Text(" Status: \(character.status) ")
@@ -44,7 +44,7 @@ struct CharacterDetailViewScreen: View {
                 }
                 .background(.black)
                 .foregroundColor(.white)
-
+                
             } else {
                 // Show loading text while image is loading
                 Text("Loading image...")

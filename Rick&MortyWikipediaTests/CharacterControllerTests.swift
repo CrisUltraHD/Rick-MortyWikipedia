@@ -56,8 +56,5 @@ class CharacterControllerTests: XCTestCase {
         }
         
         wait(for: [expectation], timeout: 10)
-    }
-    
-    // Add more tests as needed
-    
+    }    
 }

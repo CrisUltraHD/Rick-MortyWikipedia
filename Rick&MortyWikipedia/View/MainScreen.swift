@@ -104,7 +104,7 @@ struct MainScreen: View {
             
         }
         .frame(maxWidth: .infinity * 0.5, maxHeight: .infinity * 0.5)
-
+        
         // TextField for name search
         TextField("\(Image(systemName: "magnifyingglass"))  Search by name", text: $searchText)
             .padding()
@@ -117,7 +117,7 @@ struct MainScreen: View {
                 updateFilteredCharacters()
             }
             .modifier(KeyboardAwareModifier())
-
+        
         // Navigation bar configuration
             .navigationTitle("Explore All Characters")
             .navigationBarTitleDisplayMode(.large)
@@ -126,7 +126,7 @@ struct MainScreen: View {
             .onAppear {
                 characterController.fetchCharacterData()
             }
-
+        
     }
     func updateFilteredCharacters() {
         if searchText.isEmpty {

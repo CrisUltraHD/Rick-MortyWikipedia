@@ -10,10 +10,10 @@ import Foundation
 class CharacterController: ObservableObject {
     // Array of the characters
     @Published var characters: [Character] = []
-
+    
     // URL of the next page of characters
     var nextPageURL: URL? = URL(string: "https://rickandmortyapi.com/api/character?page=1")
-
+    
     // Function to fetch character data
     func fetchCharacterData() {
         // Check if the URL is valid
@@ -21,23 +21,23 @@ class CharacterController: ObservableObject {
             print("Invalid URL")
             return
         }
-
+        
         // Call function to fetch characters
         fetchCharacters(from: url)
     }
-
+    
     // Function to fetch the next page of characters
     func fetchNextPage() {
         // Check if there is a URL for the next page
         guard let nextPageURL = nextPageURL else {
             print("No URL for the next page available")
-            return 
+            return
         }
-
+        
         // Call function to fetch characters from the next page
         fetchCharacters(from: nextPageURL)
     }
-
+    
     // Private function to fetch characters from a given URL
     private func fetchCharacters(from url: URL) {
         // Create a session task to fetch data from the URL
@@ -47,7 +47,7 @@ class CharacterController: ObservableObject {
                 print("Error fetching character data: \(error?.localizedDescription ?? "Unknown error")")
                 return
             }
-
+            
             // Decode the received data into a character response
             do {
                 let response = try JSONDecoder().decode(CharacterResponse.self, from: data)
